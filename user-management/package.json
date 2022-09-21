@@ -1,0 +1,36 @@
+{
+  "name": "crm-fe-challenge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run types:sass:watch | next dev",
+    "build": "next build",
+    "start": "next start",
+    "clean": "rm -rf src/**/*.scss.d.ts",
+    "types:sass": "npm run clean && tsm src --camelCase",
+    "types:sass:watch": "npm run types:sass -- --watch"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@zeit/next-sass": "^1.0.1",
+    "next": "9.4.2",
+    "nextjs-fonts": "^0.22.0",
+    "node-sass": "^4.14.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@material-ui/icons": "^4.9.1",
+    "@types/joi": "^14.3.4",
+    "@types/node": "^14.0.5",
+    "@types/react": "^16.9.35",
+    "@types/redis": "^2.8.21",
+    "@types/uuid": "^8.0.0",
+    "joi": "^14.3.1",
+    "redis": "^3.0.2",
+    "typed-scss-modules": "^1.3.0",
+    "typescript": "^3.9.3",
+    "uuid": "^8.1.0"
+  }
+}
